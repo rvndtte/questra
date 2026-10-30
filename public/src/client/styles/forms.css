@@ -1,0 +1,42 @@
+.field { display: block; margin-bottom: 18px; }
+.field > span { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 600; }
+.field > span small { font-weight: 400; }
+.field > small { display: block; margin-top: 6px; }
+.field input:not([type=file]), .field textarea, .field select { width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); }
+.field input[type=file] { width: 100%; font-size: 14px; }
+.field textarea { min-height: 96px; resize: vertical; line-height: 1.5; }
+.field input:focus, .field textarea:focus, .field select:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
+
+.auth-layout { display: grid; grid-template-columns: 1fr 420px; gap: 80px; align-items: start; padding-top: 80px; padding-bottom: 96px; }
+.auth-intro h1 { margin-bottom: 12px; font-size: clamp(32px, 5vw, 46px); font-weight: 700; }
+.auth-intro p { max-width: 400px; font-size: 18px; }
+.auth-panel { padding: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
+.form-switch { margin: 18px 0 0; text-align: center; font-size: 14px; }
+.form-switch a { color: var(--accent); font-weight: 600; }
+.form-switch a:hover { text-decoration: underline; }
+.demo-access { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.demo-access p { margin-bottom: 10px; font-size: 14px; }
+.demo-access div { display: flex; gap: 8px; }
+.demo-access button { padding: 6px 14px; border: 1px solid var(--line-strong); border-radius: 99px; background: var(--bg); font-size: 14px; }
+.demo-access button:hover { border-color: var(--ink); }
+
+.create-layout { max-width: 760px; padding-top: 56px; padding-bottom: 96px; }
+.create-panel { padding: 32px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.create-panel h2 { margin: 0 0 18px; font-size: 20px; }
+.create-panel h2 small { font-size: 14px; font-weight: 400; }
+.create-panel h2:not(:first-child) { margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--line); }
+.create-step { margin-bottom: 18px; padding: 20px 20px 4px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); }
+.create-step .field input, .create-step .field textarea { background: var(--surface); }
+.create-step-head { display: flex; justify-content: space-between; margin-bottom: 14px; }
+.add-step { margin-bottom: 28px; }
+
+.upload-form { margin-top: 4px; padding: 18px 18px 6px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); }
+.form-actions { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+
+@media (max-width: 900px) {
+  .auth-layout { grid-template-columns: 1fr; gap: 32px; padding-top: 40px; }
+}
+@media (max-width: 640px) {
+  .create-panel { padding: 20px; }
+  .auth-panel { padding: 22px; }
+}

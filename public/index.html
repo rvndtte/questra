@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Skill Unlocked. Take a small challenge, submit real proof, and earn a badge for the skill.">
+  <title>Skill Unlocked — Learn it, prove it</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="wordmark" href="#/" aria-label="Skill Unlocked, home"><span class="wordmark-mark" aria-hidden="true"></span>Skill Unlocked</a>
+      <nav class="primary-nav" aria-label="Main">
+        <a href="#/" data-nav="home">Home</a>
+        <a href="#/explore" data-nav="explore">Challenges</a>
+        <a href="#/dashboard" data-nav="dashboard">My progress</a>
+        <a href="#/profile" data-nav="profile">Badges</a>
+      </nav>
+      <div id="account-actions" class="account-actions"></div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><strong>Skill Unlocked</strong><p>Learn something new by doing it, and show the proof.</p></div>
+      <div class="footer-links"><a href="#/explore">Browse challenges</a><a href="#/create">Create a challenge</a></div>
+      <p class="footer-note">A badge means a reviewer checked your proof. It is not a professional certification.</p>
+    </div>
+  </footer>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="#/" data-nav="home">Home</a>
+    <a href="#/explore" data-nav="explore">Challenges</a>
+    <a href="#/dashboard" data-nav="dashboard">Progress</a>
+    <a href="#/profile" data-nav="profile">Badges</a>
+  </nav>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
